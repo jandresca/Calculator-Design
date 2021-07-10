@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-</head>
-<body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <form name="calculator">
-        <h3>Calculadora</h3>
-        <p> Haz alguna calculo para ver el resultado </p>
-        <input type="textfield" name="ans" value="">
-        <br>
-        <input type="button" value="1" onclick="document.calculator.ans.value+='1'">
-        <input type="button" value="2" onclick="document.calculator.ans.value+='2'">
-        <input type="button" value="3" onclick="document.calculator.ans.value+='3'">
-        <input type="button" value="+" onclick="document.calculator.ans.value+='+'">
-        <br>
-        <input type="button" value="4" onclick="document.calculator.ans.value+='4'">
-        <input type="button" value="5" onclick="document.calculator.ans.value+='5'">
-        <input type="button" value="6" onclick="document.calculator.ans.value+='6'">
-        <input type="button" value="-" onclick="document.calculator.ans.value+='-'">
-        <br>
-        <input type="button" value="7" onclick="document.calculator.ans.value+='7'">
-        <input type="button" value="8" onclick="document.calculator.ans.value+='8'">
-        <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
-        <input type="button" value="*" onclick="document.calculator.ans.value+='*'">
-        <br>
-        <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
-        <input type="reset" value="c">
-        <input type="button" value="/" onclick="document.calculator.ans.value+='/'">
-        <input type="button" value="=" onclick="document.calculator.ans.value=eval (document.calculator.ans.value)"">
-    </form>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css"  href="estilos.css" rel="stylesheet" >
+    <title>Calculadora</title>  
+  </head>
+  <body>
 
-</body>
+    <div class="calculator">
+      <div class="result-bar">
+        <span id="Result"></span>
+      </div>
+      <input type="button" class="operator-out" value="C" id="Delete">
+      <div class="controlls">
+        <input type="button" class="number" value="7" id="seven">
+        <input type="button" class="number" value="8" id="eight">
+        <input type="button" class="number" value="9" id="nine">
+        <input type="button" class="operator" value="/" id="divide">
+        <input type="button" class="number" value="4" id="four">
+        <input type="button" class="number" value="5" id="five">
+        <input type="button" class="number" value="6" id="six">
+        <input type="button" class="operator" value="*" id="multiply">
+        <input type="button" class="number" value="1" id="one">
+        <input type="button" class="number" value="2" id="two">
+        <input type="button" class="number" value="3" id="three">
+        <input type="button" class="operator" value="-" id="minus">
+        <input type="button" class="result" value="=" id="equal">
+        <input type="button" class="result" value="0" id="cero">
+        <input type="button" class="number" value="." id="coma">
+        <input type="button" class="operator" value="+" id="plus">
+      </div>
+    </div>
+    
+
+    <script src="logica.js"></script>
+  </body>
 </html>

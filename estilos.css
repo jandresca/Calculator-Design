@@ -1,37 +1,84 @@
-form {
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    border: solid 1px #c2c2c2;
-    padding-bottom: 10px;
-    margin: auto;
-    background: fafafa;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-input[type=textfield]{
-    width: 75%;
-    padding: 16px 32px;
-    font-size: 16px;
-    margin: 8px 0;
-    border: 1px solid silver;
-    border-radius: 1px;
-    text-align: left;
-    color: #333;
-    background: #ccc;
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4e4e4e;
+}
+
+.calculator{
+  height: 600px;
+  width: 400px;
+  background-color: #1d1d1d;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.result-bar{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.result-bar span{
+  font-size: 70px;
+}
+
+.controlls{
+  height: 390px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 97.7px);
+  grid-gap: 3px;
+}
+
+input{
+  font-size: 30px;
+  color: white;
+  border: none;
+}
+
+input:focus{
+  outline: none;
+  border-color: #111111;
 
 }
 
-input[type=button], input[type=submit], input[type=reset]{
-    background: #4cafaa;
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 16px 32px;
-    font-size: 16px;
-    min-width: 21%;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+input:hover{
+  filter: brightness(110%);
 }
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
-    background: rgb(81, 128, 63);
+
+.operator{
+  background-color: #181818;
+
+}
+
+.operator-out{
+  width: 100%;
+  height: 60px;
+  background-color: #181818;
+  margin-bottom: 3px;
+}
+
+.number{
+  background-color: #111111;
+}
+
+.result{
+  background-color: rgb(167, 110, 4, 0.55);
 }
